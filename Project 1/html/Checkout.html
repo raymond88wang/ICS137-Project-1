@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="productDetails">
+        <img src=""/>
+
+    </div>
+    <form>
+        <fieldset>
+            <legend>Order Product</legend>
+            <label for="productID">Product ID</label>
+            <input type="text" name="productID" />
+
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" />
+        </fieldset>
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" />
+
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" />
+
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+        </fieldset>
+        <fieldset>
+            <legend>Shipping Information</legend>
+            <label for="shippingMethod">Shipping Method</label>
+            <select name="shippingMethod">
+                <option>Standard</option>
+                <option>Overnight</option>
+                <option>2 Days Expidited</option>
+                <option>6 Days Ground</option>
+            </select>
+
+            <label for="shippingAddress1">Address 1</label>
+            <input type="text" name="shippingAddress1" />
+
+            <label for="shippingAddress2">Address 2</label>
+            <input type="text" name="shippingAddress2" />
+
+            <label for="shippingCity">City</label>
+            <input type="text" name="shippingCity" />
+
+            <label for="shippingState">State</label>
+            <input type="text" name="shippingState" />
+
+            <label for="shippingZipcode">Zip Code</label>
+            <input type="text" name="shippingZipcode" />
+        </fieldset>
+        <fieldset>
+            <legend>Credit Card Information</legend>
+            <label for="creditCardNumber">Credit Card Number</label>
+            <input type="text" name="creditCardNumber" />
+
+            <label for="expirationDate">Exp Date</label>
+            <input type="text" name="expirationDate" />
+
+            <label for="threeDigitVerif">CVV</label>
+            <input type="text" name="threeDigitVerif" />
+
+            <label for="firstNameCC">First Name</label>
+            <input type="text" name="firstNameCC" />
+
+            <label for="lastNameCC">Last Name</label>
+            <input type="text" name="lastNameCC" />
+            
+        </fieldset>
+        <fieldset>
+            <legend>Billing Address</legend>
+            <label for="billingAddress1">Address 1</label>
+            <input type="text" name="billingAddress1" />
+
+            <label for="billingAddress2">Address 2</label>
+            <input type="text" name="billingAddress2" />
+
+            <label for="shippingCity">City</label>
+            <input type="text" name="billingCity" />
+
+            <label for="billingState">State</label>
+            <input type="text" name="billingState" />
+
+            <label for="billingZipcode">Zip Code</label>
+            <input type="text" name="billingZipcode" />
+        </fieldset>
+
+        <button class="cancelBtn" type="reset" onclick="">Cancel</button>
+        <button class="purchaseBtn" type="submit" onclick="">Purchase</button>
+    </form>
+</body>
+</html>
