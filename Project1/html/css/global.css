@@ -1,0 +1,75 @@
+﻿html, body {
+    font-family: 'Helvetica';
+    text-align: center;
+}
+
+#store img {
+    height: 150px;
+    width: 150px;
+    transition: all .2s ease-in-out;
+}
+
+#store img:hover {
+    transform: scale(1.3);
+}
+
+td {
+    width: 24%;
+    border: 1px solid;
+}
+
+td:last-child {
+    background-color: ghostwhite;
+}
+
+tr:first-child {
+    height: 100px;
+}
+
+tr:nth-child(n+2) {
+    height: 170px;
+}
+
+a[href="About.html"] {
+    float: right;
+}
+
+a[href="Main.html"], a[href="Store.html"] {
+    float: left;
+}
+
+input {
+    border-radius: 3px;
+    height: 20px;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+#checkoutForm  button{
+    float: right;
+    font: bold 14px 'Helvetica';
+    padding: 10px;
+}
+
+.purchaseBtn {
+    background-color: greenyellow;
+    margin: 10px 5px 10px 0px;
+}
+
+.cancelBtn {
+    background-color: lightgray;
+    margin: 10px 0px 10px 5px;
+}
+
+#mainLink {
+    float: right;
+}
+
+#aboutPage {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    margin-bottom: 50px;
+}
