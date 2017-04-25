@@ -2,35 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
-    <div class="productDetails">
-        <img src=""/>
-
+    <a id="mainLink" href="Main.html">Back To Main Page</a>
+    <a href="Store.html">Back To Store</a>
+    <div id="productDetails">
     </div>
-    <form>
+    <form id="checkoutForm">
         <fieldset>
             <legend>Order Product</legend>
             <label for="productID">Product ID</label>
-            <input type="text" name="productID" />
+            <input type="text" name="productID" disabled />
 
             <label for="quantity">Quantity</label>
-            <input type="number" name="quantity" />
+            <input type="number" name="quantity" placeholder="0" maxlength="3" required/>
         </fieldset>
         <fieldset>
             <legend>Customer Information</legend>
             <label for="firstName">First Name</label>
-            <input type="text" name="firstName" />
+            <input type="text" name="firstName" placeholder="Raymond" maxlength="48" required/>
 
             <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" />
+            <input type="text" name="lastName" placeholder="Wang" maxlength="48" required/>
 
             <label for="phone">Phone Number</label>
-            <input type="text" name="phone" />
+            <input type="text" name="phone" placeholder="(949) 999-9999" maxlength="14" />
 
             <label for="email">Email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" placeholder="raymoncw@uci.edu" maxlength="255" required/>
         </fieldset>
         <fieldset>
             <legend>Shipping Information</legend>
@@ -43,58 +44,61 @@
             </select>
 
             <label for="shippingAddress1">Address 1</label>
-            <input type="text" name="shippingAddress1" />
+            <input type="text" name="shippingAddress1" placeholder="123 UCI Lane" maxlength="48" required/>
 
             <label for="shippingAddress2">Address 2</label>
-            <input type="text" name="shippingAddress2" />
+            <input type="text" name="shippingAddress2" placeholder="Apt1" maxlength="24" />
 
             <label for="shippingCity">City</label>
-            <input type="text" name="shippingCity" />
+            <input type="text" name="shippingCity" placeholder="Irvine" maxlength="48" required/>
 
             <label for="shippingState">State</label>
-            <input type="text" name="shippingState" />
+            <input type="text" name="shippingState" placeholder="CA" maxlength="2" required/>
 
             <label for="shippingZipcode">Zip Code</label>
-            <input type="text" name="shippingZipcode" />
+            <input type="text" name="shippingZipcode" placeholder="92697" maxlength="5" required/>
         </fieldset>
         <fieldset>
             <legend>Credit Card Information</legend>
             <label for="creditCardNumber">Credit Card Number</label>
-            <input type="text" name="creditCardNumber" />
+            <input type="text" name="creditCardNumber" placeholder="4652 3568 9586 4257" maxlength="16" required/>
 
             <label for="expirationDate">Exp Date</label>
-            <input type="text" name="expirationDate" />
+            <input type="text" name="expirationDate" placeholder="06/22" maxlength="5" required/>
 
             <label for="threeDigitVerif">CVV</label>
-            <input type="text" name="threeDigitVerif" />
+            <input type="text" name="threeDigitVerif" placeholder="123" maxlength="3" required/>
 
             <label for="firstNameCC">First Name</label>
-            <input type="text" name="firstNameCC" />
+            <input type="text" name="firstNameCC" placeholder="Nancy" maxlength="48" required/>
 
             <label for="lastNameCC">Last Name</label>
-            <input type="text" name="lastNameCC" />
+            <input type="text" name="lastNameCC" placeholder="Wong" maxlength="48" required/>
             
         </fieldset>
         <fieldset>
             <legend>Billing Address</legend>
             <label for="billingAddress1">Address 1</label>
-            <input type="text" name="billingAddress1" />
+            <input type="text" name="billingAddress1" placeholder="123 UCI Lane" maxlength="48" required/>
 
             <label for="billingAddress2">Address 2</label>
-            <input type="text" name="billingAddress2" />
+            <input type="text" name="billingAddress2" placeholder="Apt1" maxlength="24"/>
 
             <label for="shippingCity">City</label>
-            <input type="text" name="billingCity" />
+            <input type="text" name="billingCity" placeholder="Irvine" maxlength="48" required/>
 
             <label for="billingState">State</label>
-            <input type="text" name="billingState" />
+            <input type="text" name="billingState" placeholder="CA" maxlength="2" required/>
 
             <label for="billingZipcode">Zip Code</label>
-            <input type="text" name="billingZipcode" />
+            <input type="text" name="billingZipcode" placeholder="92697" maxlength="5" required/>
         </fieldset>
 
-        <button class="cancelBtn" type="reset" onclick="">Cancel</button>
-        <button class="purchaseBtn" type="submit" onclick="">Purchase</button>
+        <button class="cancelBtn" type="reset">CANCEL</button>
+        <button class="purchaseBtn" type="submit" onclick="sendEmail();">PURCHASE</button>
     </form>
 </body>
 </html>
+
+<script type="text/javascript" src="../javascript/email.js" async></script>
+<script type="text/javascript" src="../javascript/products.js" async></script>
